@@ -1,117 +1,112 @@
-# LumenVision – Privacy Policy
+# LumenVision — Privacy Policy
 
-**Last updated: September 5, 2026**
+**Last updated: 22 September 2026**
 
-## Overview
+LumenVision is a single-player climbing game with no account, no advertising, no
+analytics and no third-party code of any kind. It has no server behind it. This
+page describes exactly what the game writes down, where that lands, and how to
+erase it.
 
-LumenVision ("the App") is a neon-themed vertical climbing game designed for all ages, available on iPhone, iPad, Mac, and Apple Vision Pro. We are committed to protecting your privacy — especially when it comes to young players. This policy explains what information the App collects, how it is used, and how it is protected.
-
----
-
-## Information We Collect
-
-### 1. Game Progress Data
-
-The App saves your game progress on your device using Apple's `UserDefaults` framework, including:
-
-- Your highest score and best combo
-- Coins earned and marble skins unlocked
-- Daily reward claim status
-
-This data is synced across your Apple devices via **iCloud** (using Apple's `NSUbiquitousKeyValueStore`) if you are signed in to iCloud, so your progress is preserved when switching devices. It is stored in your own private iCloud key-value store, is associated with your Apple Account, and is governed by Apple's iCloud privacy practices. We have no access to it.
-
-### 2. Preferences
-
-Your audio settings — background music volume and sound effects volume — along with haptics, reduce motion, and high contrast preferences are stored locally on the device they were set on. They are not transmitted anywhere.
+The short version: everything the game stores is your own game progress, it
+lives on your device and in your own iCloud storage, and none of it reaches me
+or anyone else.
 
 ---
 
-## Information We Do NOT Collect
+## Everything LumenVision stores
 
-- We do **not** collect your name, email address, or any other personal information.
-- We do **not** use third-party analytics, advertising SDKs, or tracking technologies.
-- We do **not** track you across apps or websites owned by other companies.
-- We do **not** share any data with third parties.
-- We do **not** collect location data.
-- We do **not** access your camera, microphone, photos, or contacts.
-- We do **not** display advertisements of any kind.
-- We do **not** require or offer account creation.
+There are two kinds of stored data, and this is the complete list of both.
 
-The App ships with a privacy manifest (`PrivacyInfo.xcprivacy`) that declares no tracking, no tracking domains, and no collected data types.
+**Progress, saved on the device and mirrored to your iCloud account:** best
+score, best combo, best distance climbed, coins earned, coins spent, current
+coin balance, which marble skin is selected, which skins are unlocked, the date
+of your last daily reward, and two bookkeeping values used to decide which
+device's save is newest.
 
----
+**Preferences, saved on the device only:** music volume, sound-effects volume,
+haptics on or off, reduce motion on or off, high contrast on or off. These do
+not sync; each device keeps its own.
 
-## Feedback Emails
-
-If you tap **Settings → Feedback → Send Feedback**, the App opens your system mail composer with a prefilled subject line containing your platform name, OS version, device model, and App version — details that help us reproduce issues. Nothing is sent until **you** press Send in your own email client, and we receive only what you choose to send. If no mail app is configured, the App simply copies our email address to your clipboard.
+That is the whole of it. There is no player profile, no identifier, no history
+of what you did or when you played.
 
 ---
 
-## Data Storage and Security
+## Where it goes
 
-All game data is stored locally on your device and, if iCloud is enabled, synced through Apple's secure iCloud infrastructure into your private key-value store. We do not operate any external servers and do not have direct access to your data.
+Progress is written locally through Apple's `UserDefaults` and mirrored to
+Apple's `NSUbiquitousKeyValueStore` — your private iCloud key-value storage,
+attached to your own Apple Account. Apple operates that storage; I cannot see
+inside it, and no copy is sent anywhere else. If you are not signed in to
+iCloud, the game simply keeps everything on the device.
 
-Every level is generated procedurally on your device, so ordinary play requires no network connection at all.
-
----
-
-## Data Retention and Deletion
-
-We retain nothing, because we receive nothing. Your game data is held on your own device and in your own private iCloud storage for as long as you keep the App installed, and it is deleted entirely under your control:
-
-- **Reset your progress** — **Settings → Reset All Progress** clears scores, coins, and unlocked skins.
-- **Delete everything on the device** — deleting the App removes all of its local data.
-- **Delete the iCloud copy** — the synced copy is removed from your Apple Account through your device's iCloud settings, under the App's storage entry.
-
-Because we never collect or receive personal data, there is no account to close, no consent to revoke, and no deletion request to send us — there is nothing held on our side to delete. If you have a question about any of this, write to us at the address below and we will answer it.
+Nothing else leaves your device. The game generates each shaft as you climb
+rather than downloading anything, so a normal session uses no network at all.
 
 ---
 
-## Children's Privacy
+## Email you choose to send
 
-LumenVision is designed to be safe for players of all ages, including young children. The App:
-
-- Does **not** collect any personal information from children.
-- Does **not** contain advertising of any kind.
-- Does **not** require account creation.
-- Does **not** link to external websites within gameplay.
-- Does **not** contain in-app purchases.
-
-We comply with the Children's Online Privacy Protection Act (COPPA) and applicable international children's privacy regulations. The App is rated 4+ on the App Store.
+*Settings → Feedback → Send Feedback* opens your own mail app with a subject
+line already containing your platform, OS version, device model and app version,
+because those are the details I need to reproduce a bug. The message sits in
+your mail app until **you** press Send, and I receive only what you actually
+send. If no mail app is set up, the game copies my address to the clipboard
+instead. Anything you email me is kept only as long as it takes to answer you.
 
 ---
 
-## Third-Party Services
+## What the game never does
 
-The App uses the following Apple-provided framework, governed by Apple's own privacy policies:
+It does not ask for your name or email, and has no sign-in. It contains no
+analytics, no advertising SDK, no crash reporter and no third-party libraries
+whatsoever — the entire app is Apple's own frameworks and code written for this
+game. It does not track you across other apps or websites, does not read your
+location, camera, microphone, photos, contacts or health data, and shows no
+advertising. The bundled privacy manifest declares no tracking, no tracking
+domains and no collected data types, which is a claim Apple's tooling checks
+against the shipped binary.
 
-| Service | Purpose |
-|---|---|
-| iCloud (NSUbiquitousKeyValueStore) | Sync game progress across your devices |
-
-LumenVision includes no third-party SDKs whatsoever. For more information, please refer to [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
-
----
-
-## Your Rights
-
-Because we collect no personal data, there is nothing for us to disclose, correct, or delete on your behalf. Your game data lives on your device and in your own private iCloud storage, entirely under your control.
-
----
-
-## Changes to This Policy
-
-We may update this Privacy Policy from time to time. Any changes will be reflected with an updated date at the top of this document. Continued use of the App after changes constitutes acceptance of the updated policy.
+The one system feature that reaches outside the game is Apple's review prompt,
+which may ask you to rate the app after you have played a while. It is Apple's
+standard prompt and it hands me nothing but the rating you choose to leave in
+the App Store.
 
 ---
 
-## Contact
+## Erasing everything
 
-If you have any questions about this Privacy Policy, please contact us at:
+- **Reset progress:** *Settings → Reset All Progress* clears scores, coins and
+  unlocked skins on the device and in iCloud. It cannot be undone.
+- **Remove the local copy:** deleting the app removes everything it stored on
+  that device.
+- **Remove the iCloud copy:** delete it from your device's iCloud storage
+  settings, under this app's entry.
+
+There is no account to close and no deletion request to send me, because nothing
+of yours is held on my side. If you would like help confirming that, write to me
+and I will walk through it with you.
+
+---
+
+## Children
+
+LumenVision is rated 4+ and is safe for young players. It collects nothing, has
+no advertising, no in-app purchases, no chat or messaging, no account, and no
+links that lead out of the game during play. Because no personal information is
+collected from anyone, there is nothing for a parent to consent to or withdraw
+under COPPA, the GDPR or similar laws elsewhere.
+
+---
+
+## Changes and contact
+
+If this policy changes, the date at the top changes with it, and the previous
+wording stays visible in this document's history.
+
+Questions about anything above:
 
 **davinci.dalhi@gmail.com**
 
----
-
-*This privacy policy applies to LumenVision on all Apple platforms: iOS, iPadOS, macOS, and visionOS.*
-
+This policy covers LumenVision on iPhone, iPad, Mac and Apple Vision Pro, and is
+maintained by Ahmed DALHI, the game's sole developer.
