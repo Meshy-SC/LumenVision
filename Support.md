@@ -1,78 +1,124 @@
 # LumenVision Support
 
-Thank you for playing LumenVision! If you need help, have a question, or want to report a bug, we're here to assist.
+LumenVision is a one-thumb vertical climber. Your marble rises on its own and
+drifts sideways the whole time; tapping flips the drift between left and right.
+Every gate across the shaft is sealed by two hazard machines with a single gap
+between them, and the drift means you are always travelling somewhere — an empty
+stretch of shaft is not free time, it is distance you have to steer out of.
+
+Written and maintained by Ahmed DALHI. Questions go to **davinci.dalhi@gmail.com**,
+usually answered within 48 hours.
 
 ---
 
-## Contact Us
+## Playing
 
-For any questions, feedback, or support requests, please email us at:
+**Controls.** Tap anywhere to flip direction. On Mac, space or return flips,
+left/right arrows (or A and D) steer to a specific side, and escape pauses. A
+connected game controller works throughout, including the menus. There is
+nothing else to learn — the whole game is that one input.
 
-**davinci.dalhi@gmail.com**
+**Threading a gate.** Aim for the gap. Passing through earns a thread bonus, and
+passing close to the centre earns a larger perfect-thread bonus. Coins sit in
+the gaps, so the clean line and the greedy line are usually the same line.
 
-We aim to respond within 48 hours.
+**Combos.** Coins and gates chain into a multiplier: every three coins raise it
+one step, up to **8×**. The chain expires three seconds after your last score,
+so combos are about rhythm rather than perfection.
 
-You can also reach us from inside the app: **Settings → Feedback → Send Feedback** opens your mail app with your device and version details already filled in.
+**Lives.** You start a run with **3** and can hold up to **5**. A hit costs one
+life, clears the hazards near you, and drops you back at the last checkpoint
+with a brief shield. Extra lives arrive at **500, 1,500, 3,000, 5,000 and 8,000
+points**.
 
----
+**Reviving.** When the last life goes, you can spend coins to continue instead of
+ending the run. The first revive in a run costs 25 coins and each further revive
+in that same run costs 25 more. A countdown gives you a moment to get ready.
 
-## Report a Bug
+**Coins and skins.** Coins come from gameplay and from a daily reward of 25 on
+the main menu. They unlock **10 marble skins**, each with its own animated
+emblem, and they pay for revives. Skins are cosmetic — none of them change how
+the marble handles.
 
-If you've encountered a bug or crash, please include the following details in your email so we can help you faster:
+**The climb.** Six biomes cycle as you rise — Verdant Gate, Rose Cordon, Amber
+Span, Violet Reach, Cyan Verge and Crimson Crown — each with its own palette.
+Six kinds of hazard machine seal the gates: saw blades, crushers, gear grinders,
+pincers, arc emitters and rotor fans. Higher up, gaps tighten and whole gates
+begin sliding side to side.
 
-- Device model (e.g., iPhone 17 Pro, iPad Pro, MacBook, Apple Vision Pro)
-- OS version (e.g., iOS 26.0, macOS 26.0, visionOS 26.0)
-- The LumenVision version (**Settings → About → Version**)
-- A description of what happened and what you were doing at the time
-
-You can also report issues on our [GitHub Issues page](https://github.com/M3SHY/LumenVision/issues).
-
----
-
-## Frequently Asked Questions
-
-**Q: How do I play?**
-A: Your marble climbs automatically through a neon vertical shaft. Tap the screen to flip the marble's horizontal direction between left and right. Thread the gap in each gate, collect coins, and avoid the hazard machines as you climb higher.
-
-**Q: What are the hazard machines?**
-A: Each gate is sealed by two hazard machines extending from the screen edges — saw blades, crushers, gear grinders, pincers, arc emitters, or rotor turbines. They leave only a narrow gap you must thread through. The higher you climb, the tighter the gaps and the more gates start sliding side-to-side.
-
-**Q: How do lives work?**
-A: You start each run with 3 lives (up to a maximum of 5). Colliding with a hazard costs one life, clears nearby obstacles, and respawns you at the last checkpoint with a brief invulnerability shield. When all lives are gone, the run ends.
-
-**Q: How do I earn extra lives?**
-A: Extra lives are awarded at score milestones during a run. The milestone thresholds are shown in the HUD when you reach them.
-
-**Q: What are combos?**
-A: Threading gates and collecting coins in rapid succession builds a combo multiplier (up to 8×). The combo resets if you go too long without scoring. Higher combos mean more points per action.
-
-**Q: What are the marble skins?**
-A: LumenVision has 10 collectible marble skins, each with a unique animated emblem. You unlock them by spending coins earned during gameplay from the skin shop on the main menu.
-
-**Q: How do I earn coins?**
-A: Coins are collected during gameplay by picking them up from gate gaps. You also receive a daily coin reward from the main menu.
-
-**Q: How do I sync my progress across devices?**
-A: LumenVision uses iCloud to sync your progress automatically. Make sure you are signed in to the same Apple Account on all your devices and that iCloud is enabled. Your highest score, best combo, coin wallet, and unlocked skins all follow you between iPhone, iPad, Mac, and Apple Vision Pro.
-
-**Q: I lost my progress. Can I recover it?**
-A: Your progress is stored in iCloud. If you reinstall the app on a device signed in to the same Apple Account, your progress should restore automatically. Sync can take a moment after a fresh install — if it doesn't appear, please contact us at the email above.
-
-**Q: Does resetting my progress remove everything?**
-A: Yes. **Settings → Reset All Progress** clears all scores, coins, and unlocked skins. This cannot be undone.
-
-**Q: The music or sound effects aren't playing.**
-A: Check **Settings → Audio**, where music and sound effects have separate volume sliders. Also make sure your device isn't in silent mode and that another app isn't holding the audio session.
-
-**Q: Does LumenVision work offline?**
-A: Yes. Every level is generated procedurally on your device, so nothing needs downloading and you can play with no network connection. An internet connection is only needed to sync progress via iCloud.
-
-**Q: Is LumenVision accessible?**
-A: The app supports Reduce Motion (in Settings) to suppress particle animations, High Contrast mode for brighter obstacle edges, and a haptics toggle. The menu and HUD carry VoiceOver labels. If there's an accessibility improvement that would help you play, please write to us — we want to hear about it.
-
-**Q: Is my data shared with third parties?**
-A: No. LumenVision does not collect personal information or share any data with third parties. For full details, see our [Privacy Policy](https://m3shy.github.io/LumenVision/privacy/).
+**Every gate is passable.** The generator runs a reachability check before
+placing a gate and rejects any layout the marble could not physically thread
+from where it will be. If a gate ever looks impossible, it isn't — but tell me
+about it anyway, because that would be a bug worth finding.
 
 ---
 
-*LumenVision is developed by Ahmed DALHI.*
+## Progress and devices
+
+Your best score, best combo, best distance, coin balance, selected skin and
+unlocked skins sync through iCloud. Sign in to the same Apple Account on each
+device with iCloud enabled and progress follows you between iPhone, iPad, Mac
+and Apple Vision Pro.
+
+**After reinstalling, progress looks gone.** Sync usually takes a few seconds on
+a fresh install. Open the app, wait on the main menu, then relaunch it. If it
+still hasn't appeared, check that the device is signed in to the same Apple
+Account and that iCloud Drive is on, then write to me.
+
+**Progress differs between two devices.** The most recently updated copy wins.
+Play a run on the device holding the progress you want to keep — that pushes it
+out as the newest copy.
+
+**Starting over.** *Settings → Reset All Progress* clears scores, coins and
+unlocked skins on that device and in iCloud. It cannot be undone.
+
+---
+
+## If something is wrong
+
+**No sound.** *Settings* has separate volume sliders for music and effects;
+check both. The game plays through the ringer switch by design, so silent mode
+is not the cause, but another app holding the audio session can be.
+
+**The game feels too fast or too busy.** *Settings* has a Reduce Motion switch,
+which drops the animated transitions between screens and the marble's animated
+emblem so things appear rather than move; a High Contrast switch, which draws
+hazard plates and blades with white, thicker outlines; and a haptics switch.
+
+**It won't launch, or it crashed.** Send me the details below and I will look at
+it directly.
+
+**Reporting a bug.** *Settings → Feedback → Send Feedback* opens your mail app
+with your platform, OS version, device model and app version already filled in —
+nothing is sent until you press Send. Otherwise, email the same details to
+**davinci.dalhi@gmail.com**, with what you were doing when it happened. Bugs can
+also go to [GitHub Issues](https://github.com/Meshy-SC/LumenVision/issues).
+
+---
+
+## Accessibility
+
+VoiceOver reads the menus and the HUD, and announces events during a run such as
+reaching a checkpoint, earning a bonus life and gaining a level. Reduce Motion,
+High Contrast and haptics each have their own switch in Settings, independent of
+the system-wide settings. Game controller support covers the menus as well as
+gameplay, so the game can be played without touching the screen.
+
+If an accessibility change would make LumenVision playable for you, please write
+to me. That request goes to the top of the list.
+
+---
+
+## Other questions
+
+**Does it work offline?** Yes, completely. Shafts are generated on your device as
+you climb, so nothing is downloaded and no connection is needed. iCloud sync is
+the only thing that ever uses the network.
+
+**Are there ads or in-app purchases?** No. There is nothing to buy, no
+advertising, and no subscription. Coins are earned by playing.
+
+**What is collected about me?** Nothing. See the
+[Privacy Policy](https://github.com/Meshy-SC/LumenVision/blob/main/PrivacyPolicy.md).
+
+**Which devices?** iPhone, iPad, Mac and Apple Vision Pro.
